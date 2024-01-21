@@ -1,0 +1,478 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    transition: all .2s linerar;
+
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+
+body {
+    overflow-x: hidden;
+
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 1rem;
+    z-index: 1000;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+    padding-right: 2.5rem;
+    justify-content: space-between;
+
+
+
+}
+section{
+    overflow: hidden;
+}
+.button{
+    height: 3.5rem;
+    width:15rem;
+    background-color:blue;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 5rem;
+    margin: 2.5rem 0;
+}
+
+.nav ul li a {
+    align-items: center;
+    font-size: 1.8rem;
+    margin: 1.2rem;
+    color: black;
+}
+
+
+
+
+header.fa-times{
+    transform: rotate(180degree );
+    
+}
+.container.logo{
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(210, 212, 213);
+    
+}
+.box{
+    padding: 3rem 0;
+    
+}
+.box h2{
+font-size: 2.5rem;
+color: black;
+
+}
+.box h2 i{
+    padding: 0 1rem;
+}
+.content
+{
+border: 2px solid none;
+text-align: center;
+justify-content: end;
+    padding-top: 25rem;
+
+}
+
+.content h1{
+font-size: 5rem;
+color: rgb(176, 244, 205);
+
+}
+.content h1 span{
+    color: blue;
+}
+.content h2 {
+    font-size: 3rem;
+    color: cadetblue;
+}
+
+.content h2 span{
+    color: burlywood;
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+.logo span {
+    color: rgb(209, 219, 69);
+}
+
+.logo span:hover {
+    color: red
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+    color: burlywood;
+}
+
+.fas {
+    cursor: pointer;
+    font-size: 3rem;
+    color: blue;
+    display: none;
+
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 55%;
+
+    }
+
+    .fas {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: .5rem;
+        box-shadow: 0 0 0 100vh white;
+        background-color:white;
+        opacity: 0;
+    }
+
+    .nav ul {
+        width: 100%;
+        flex-flow: column;
+        padding: 2rem 0;
+
+
+    }
+    
+    
+
+    .nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+
+    }
+    
+
+    .nav ul li a {
+        font-size: 3rem;
+        font-weight: 300;
+        color:black;
+    }
+    .nav-toggle{
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+.facility{
+min-height: 100vh;
+background-color:none;
+
+}
+.heading{
+    text-align: center;
+    justify-content: center;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-top: 10rem;
+    color: black;
+    
+}
+.heading span{
+    color: blue;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.review .box-container{
+    background-color: #f3b4b4;
+    align-items: center;
+
+ }
+ .review .box-container .box p{
+    font-size: 1.2rem;
+    color:black;
+
+ }
+ .review .box-container .box h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #f2f2f2;
+    
+ }
+ .review .box-container .box span{
+    color: blue;
+    font-size: 2.4rem;
+    align-items: center;
+    justify-content: center;
+
+ }
+ .review .box-container .box img{
+    width: 20%;
+    height: 50%;
+    border-radius: 50%;
+    align-items: center;
+ }
+ @media(min-width:768px){
+    .review .box-container{
+        background-color: #717171;
+        display: flex;
+    
+     }
+
+ }
+ .review .heading{
+    align-items: center;
+ }
+ .counter .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+ }
+ .counter .box-container .box{
+    margin: 2rem 5rem;
+    text-align: center;
+
+ }
+ .counter .box-container .box i{
+    color: blue;
+    font-size: 5rem;
+
+ }
+ .counter .box-container .box span{
+    color: black;
+    font-size: 3rem;
+    display: block;
+    padding: 1rem 0rem;
+ }
+ .counter .box-container .box h3{
+    color:orchid ;
+    font-size: 1.8rem;
+ }
+ .contect{
+    background-color: black;
+ }
+ .contect .heading{
+    color: white;
+ }
+ .contect form{
+    text-align: center;
+ }
+ .contect form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ .contect form .inputBox input,select{
+    height: 4rem;
+    width: 49%;
+    padding: 0 1rem;
+    margin: 1rem 0rem;
+    font-size: 1.7rem;
+    color: black;
+ }
+ .contect form textarea{
+    height: 20rem;
+    resize: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+ }
+ .contect form input[type="submit"]{
+    width: 20rem;
+ }
+ .contect form input[type="submit"]{
+    width: 100%;
+ }
+ .contect form input[type="submit"]:hover{
+    background-color: black;
+ }
+ .contect form .inputBox input,select{
+    width: 100%;
+ }
+ .post .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+ .post .box-container .box{
+    width: 30rem;
+    
+    margin: 2rem 1rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+ }
+ .post .box-container .box img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+ }
+ .post .box-container .box .content{
+    padding: 0 1.5rem;
+ }
+ .credit{
+    text-align: center;
+    color: #fff;
+    width: 80%;
+    margin: 0;
+    padding: 2rem 0;
+    padding-bottom: 4rem;
+    border-top: .1rem solid #ccc;
+    align-items: center;
+
+
+ }
+ .credit span{
+    color: blue;
+ }
+ .footer{
+    background-color: black;
+    align-items: center;
+ }
+ .footer p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+ }
+ .footer .col-md-4:nth-child(1) a{
+font-size: 3rem;
+color: #eee;
+
+ }
+ .footer .col-md-4:nth-child(1) a span{
+    color: blue;
+ }
+ .footer a{
+    font-size: 2rem;
+    color: #ccc;
+    display: block;
+ }
+ .footer a:hover{
+    color: blue;
+
+ }
+ .footer h3{
+    color: #fff;
+    font-size: 3rem;
+
+ }
